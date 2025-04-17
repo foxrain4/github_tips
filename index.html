@@ -1,48 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Tips - Maze of Dragons</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Guide</title>
   <style>
     body {
-      background-color: #1c1c1e;
-      color: #e4e4e4;
-      font-family: "Maven Pro", sans-serif;
-      font-size: 13px;
-      line-height: 1.6;
-      padding: 30px;
+      background-color: #111;
+      color: #ddd;
+      font-family: 'Spectral', serif;
+      text-align: center;
+      padding: 40px 20px;
       max-width: 700px;
       margin: auto;
+      line-height: 1.7;
     }
     h2 {
       color: #5c7cfa;
-      text-align: center;
+      font-size: 28px;
       margin-bottom: 10px;
     }
     h3 {
       color: #51cf66;
-      margin-top: 30px;
-    }
-    p, li {
-      margin-bottom: 10px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .icon {
-      font-size: 40px;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    .image-box {
-      text-align: center;
-      margin: 20px 0;
-    }
-    .image-box img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
+      font-size: 22px;
     }
     a {
       color: #fff;
@@ -51,66 +31,67 @@
     a:hover {
       color: #ffe066;
     }
-    .quote {
-      font-style: italic;
-      color: #aaa;
-      text-align: center;
-      margin-top: 40px;
+    img {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px 0;
+      border-radius: 12px;
+    }
+    p {
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="icon">🐙</div>
-  <h2>Tips for Using GitHub</h2>
+  <div>
+    <div style="font-size: 40px; margin-bottom: 10px;">🐙</div>
+    <h2>GitHub Guide</h2>
+    <p>
+      GitHub is a platform for hosting and collaborating on code. It uses Git, a version control system, to track changes and enable team contributions.
+    </p>
 
-  <p>
-    GitHub is the home for all your code projects—but it can also power your websites, notes, templates, and even collaborative writing.
-    Below are some quick tips on how to make GitHub less intimidating and more magical.
-  </p>
+    <img src="picture_01.png" alt="GitHub interface screenshot">
 
-  <div class="image-box">
-    <img src="picture_01" alt="GitHub example screenshot">
-  </div>
+    <h3>Key Concepts</h3>
+    <ul style="text-align: left; display: inline-block;">
+      <li><strong>Repository (Repo):</strong> A project folder with code, documentation, etc.</li>
+      <li><strong>Commit:</strong> A snapshot of code changes.</li>
+      <li><strong>Branch:</strong> A parallel version of the code.</li>
+      <li><strong>Merge:</strong> Combining changes from one branch into another.</li>
+      <li><strong>Pull Request (PR):</strong> A request to merge code — often reviewed by teammates.</li>
+      <li><strong>Fork:</strong> Your own copy of someone else's repo.</li>
+    </ul>
 
-  <h3>🔍 Focus on What You Need</h3>
-  <p>
-    You don't need to know everything about GitHub. If you're just using it for web publishing or storing content, you'll mostly interact with:
-  </p>
-  <ul>
-    <li><strong>Repositories</strong> – Your project folders.</li>
-    <li><strong>Commits</strong> – Saves or edits you make to your files.</li>
-    <li><strong>GitHub Pages</strong> – Lets you turn files into a live website.</li>
-  </ul>
+    <h3>Essential Commands (in terminal)</h3>
+    <pre style="text-align: left; display: inline-block; background-color: #222; padding: 10px; border-radius: 8px;">
+git clone &lt;repo_url&gt;     # Download a repo
+git add .                  # Stage all changes
+git commit -m "message"    # Save changes
+git push                   # Upload changes
+git pull                   # Download updates
+    </pre>
 
-  <h3>🗂️ One Page = One Repo (If Needed)</h3>
-  <p>
-    If you're using GitHub to host embedded tools on a Google Sites (or any website), having a separate repository for each page can simplify embedding, debugging, and updating.
-  </p>
+    <h3>What You Can Do With GitHub</h3>
+    <ul style="text-align: left; display: inline-block;">
+      <li>Host your code publicly or privately</li>
+      <li>Collaborate with others through PRs and issues</li>
+      <li>Create static websites with GitHub Pages</li>
+      <li>Showcase projects in a portfolio</li>
+    </ul>
 
-  <h3>📌 Pin What Matters</h3>
-  <p>
-    Your GitHub profile can get cluttered fast. Use the pin feature to highlight the repositories you care about most (like your main website tools or portfolio pages).
-  </p>
+    <h3>Tips for Beginners</h3>
+    <ul style="text-align: left; display: inline-block;">
+      <li><strong>Use Descriptive Commit Messages:</strong> Instead of vague messages like "Fixed stuff," use clear descriptions like "Fixed bug in user authentication logic."</li>
+      <li><strong>Branching:</strong> Create branches for new features or bug fixes to keep your main codebase stable.</li>
+      <li><strong>Experiment Freely:</strong> Git allows you to try new things without fear. You can always revert to a previous commit if needed.</li>
+    </ul>
 
-  <h3>🌐 Use GitHub Pages</h3>
-  <p>
-    Free hosting, clean URLs, and no extra signup. Just push HTML/CSS/JS into your repo and enable GitHub Pages in the settings.
-  </p>
-
-  <h3>🧼 Keep It Tidy</h3>
-  <p>
-    When your repositories follow a clean, consistent structure (like README first, assets folder, index.html), you’ll find it easier to edit and expand later.
-  </p>
-
-  <p>
-  To get started with creating your own repository, check out the  
-  <a href="https://www.mazeofdragons.com/off-topic/knowledge/github-repository-tutorial" target="_blank">
-    GitHub Repository Tutorial
-  </a>.
-</p>
-
-  <div class="quote">
-    GitHub isn’t just for developers. It’s a toolbox for creators, organizers, and curious minds.
+    <p>
+      👉 <strong>To get started with creating your own repository,</strong> check out the 
+      <a href="https://www.mazeofdragons.com/off-topic/knowledge/github-repository-tutorial" target="_blank">
+        GitHub Repository Tutorial
+      </a>.
+    </p>
   </div>
 </body>
 </html>
